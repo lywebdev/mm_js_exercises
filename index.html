@@ -71,49 +71,49 @@
     </style>
 </head>
 <body>
-    <div id="like-btn" class="btn btn--green">Like</div>
+<div id="like-btn" class="btn btn--green">Like</div>
 
-    <form action="">
-        <label for="todo-title">
-            todo title:
-            <input type="text" id="todo-title" name="todo-title">
-        </label>
-        <label for="todo-text">
-            todo text:
-            <input type="text" id="todo-text" name="todo-text">
-        </label>
+<form action="">
+    <label for="todo-title">
+        todo title:
+        <input type="text" id="todo-title" name="todo-title">
+    </label>
+    <label for="todo-text">
+        todo text:
+        <input type="text" id="todo-text" name="todo-text">
+    </label>
 
-        <button id="add-in-todo">Add in todo</button>
+    <button id="add-in-todo">Add in todo</button>
+</form>
+
+<ul id="todos">
+    <li class="todo">
+        <div class="todo__title">Todo 1</div>
+        <div class="todo__text">Test todo</div>
+    </li>
+</ul>
+
+
+<img id="target-img" src="https://w.forfun.com/fetch/8f/8f58560f9196ceafdef9787eccd6dab9.jpeg" alt="" style="height: 200px; object-fit: cover;">
+<hr>
+<button id="change-target-img">change img</button>
+
+<div id="login-form">
+    <h2>Auth form</h2>
+    <form id="form">
+        <label for="username">
+            <input class="input" type="text" id="username" placeholder="username">
+        </label>
+        <label for="password">
+            <input class="input" type="password" id="password" placeholder="password">
+        </label>
+        <button type="button" onclick="login()">Login</button>
     </form>
-
-    <ul id="todos">
-        <li class="todo">
-            <div class="todo__title">Todo 1</div>
-            <div class="todo__text">Test todo</div>
-        </li>
-    </ul>
-
-
-    <img id="target-img" src="https://w.forfun.com/fetch/8f/8f58560f9196ceafdef9787eccd6dab9.jpeg" alt="" style="height: 200px; object-fit: cover;">
-    <hr>
-    <button id="change-target-img">change img</button>
-
-    <div id="login-form">
-        <h2>Auth form</h2>
-        <form id="form">
-            <label for="username">
-                <input class="input" type="text" id="username" placeholder="username">
-            </label>
-            <label for="password">
-                <input class="input" type="password" id="password" placeholder="password">
-            </label>
-            <button type="button" onclick="login()">Login</button>
-        </form>
-        <div id="message"></div>
-    </div>
+    <div id="message"></div>
+</div>
 
 <script>
-// 1. Variables and Conditionals
+    // 1. Variables and Conditionals
     // 1. Create a variable to store your age. Write a conditional statement to check if you are old enough to vote (age >= 18), and log a message accordingly.
     let age = 20;
     console.log(age > 20 ? 'You can vote' : 'You can\'t vote');
@@ -121,17 +121,17 @@
     // 2. Write a program that prompts the user for their name. If the name is "John," log "Hello, John!" to the console; otherwise, log "You are not John."
     let userName = prompt('Enter your name, please');
     console.log(userName === 'John' ? 'Hello, John!' : 'You are not John.');
-// 2. Functions
+    // 2. Functions
     // 1. Write a function that takes two numbers as parameters and returns their sum. Call the function with different numbers to test it.
     let sumNumbers = (num1, num2) => num1 + num2;
     console.log(sumNumbers(5, -20));
 
     // 2. Create a function that accepts a string as a parameter and returns the string reversed. For example, "hello" should become "olleh."
-        // For example, "hello" should become "olleh." - in first string we can see 'hello' - 5 symbols, in the reverse line we can see 'olleh.' - 6 symbols
+    // For example, "hello" should become "olleh." - in first string we can see 'hello' - 5 symbols, in the reverse line we can see 'olleh.' - 6 symbols
     let reverseString = inputString => inputString.split().reverse().join('');
     console.log(reverseString('hello'));
 
-// 3. Arrays and Loops
+    // 3. Arrays and Loops
     // 1. Create an array of your favorite fruits. Use a `for` loop to log each fruit to the console.
     let favouriteFruits = ['Apple', 'Orange', 'Abricot', 'Peach', 'Cherry', 'Banana', 'Strawberry', 'Raspberry'];
     for (let i = 0; i < favouriteFruits.length; i++) {
@@ -171,7 +171,7 @@
     }
     console.log(evenNumbersArray);
 
-// 4. Objects
+    // 4. Objects
     // 1. Create an object representing a book with properties like title, author, and year. Print the book's details to the console.
     let bookObject = {
         title: 'Clean Code: A Handbook of Agile Software Craftsmanship',
@@ -195,7 +195,7 @@
 
     printPersonInfo(myPersonObject);
 
-// 5. Objects as Classes
+    // 5. Objects as Classes
     // 1. Create an object that simulates a class representing a car with properties like make, model, and year. Add a method to start the car.
     // 2. Extend the previous car class object with a method to drive the car. Print a message when you start and drive the car instance.
     class Car {
@@ -251,14 +251,14 @@
         }
     });
 
- // 6. Window Object
+    // 6. Window Object
     // 1. Use the `window.alert` method to display an alert dialog with a message of your choice when a button is clicked on a webpage.
     alert('window alert');
 
     // 2. Create a function that uses `window.prompt` to ask the user for their name, then use `window.alert` to greet them with their name.
     alert(prompt('What is your name?'));
 
-// 7. DOM Manipulation
+    // 7. DOM Manipulation
     // 1. Create an HTML page with a button and a div element. Write a JavaScript function that changes the text content of the div when the button is clicked
     let likeBtn = document.getElementById('like-btn');
     likeBtn.addEventListener('click', (event) => {
